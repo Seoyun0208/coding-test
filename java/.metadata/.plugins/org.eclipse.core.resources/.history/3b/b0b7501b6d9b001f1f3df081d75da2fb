@@ -1,0 +1,20 @@
+package lv0;
+
+import java.util.ArrayList;
+
+public class _011배열의원소만큼추가하기 {
+    public static int[] solution(int[] arr) {
+        ArrayList<Integer> answer = new ArrayList<Integer>();
+        for (int num : arr) {
+        	for (int i = 0; i < num; i++) {
+        		answer.add(num);
+        	}
+        }
+       return answer;
+    }
+
+	public static void main(String[] args) {
+		int[] arr = {5, 1, 4};
+		System.out.println(solution(arr));
+	}
+}
