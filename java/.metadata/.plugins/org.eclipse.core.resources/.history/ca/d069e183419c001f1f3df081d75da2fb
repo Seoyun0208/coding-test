@@ -1,0 +1,21 @@
+package lv0;
+
+public class _013문자열바꿔서찾기 {
+    public static int solution(String myString, String pat) {
+        String changed = "";
+        for (String str : myString) {
+            if (str == 'A') {
+                changed += 'B';
+            } else {
+                changed += 'A';
+            }
+        }
+        return changed.contains(pat) ? 1 : 0;
+    }
+
+	public static void main(String[] args) {
+		String myString = "ABBAA";
+		String pat = "AABB";
+		System.out.println(solution(rny_string, pat));
+	}
+}
