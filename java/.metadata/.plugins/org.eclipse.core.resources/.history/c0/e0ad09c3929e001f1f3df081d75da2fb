@@ -1,0 +1,31 @@
+package lv0;
+
+import java.util.ArrayList;
+
+public class _025조건에맞게수열변환하기1 {
+    public static int[] solution(int[] arr) {
+    	// javascript 와 다르게 배열에 바로 요소 추가 불가
+    	// 배열을 ArrayList 로 변환 후 요소 추가 -> ArrayList를 배열로 변환
+    	ArrayList<Integer> numbers = new ArrayList<Integer>();
+    	for (int num : arr) {
+            if (num >= 50 && num % 2 == 0) {
+            	numbers.add(num / 2);
+            } else if (num < 50 && num % 2 == 1) {
+            	numbers.add(num * 2);
+            } else {
+            	numbers.add(num);
+            }    		
+    	}
+    	
+        int[] answer = new int[numbers.size()];
+        for(int i = 0; i < numbers.size(); i++) {
+        	answer[i] = numbers.get(i);
+        }
+       return answer;
+    }
+
+	public static void main(String[] args) {
+		int[] arr = {1, 2, 3, 100, 99, 98};
+		System.out.println(solution(arr));
+	}
+}
