@@ -1,0 +1,16 @@
+package lv0;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+public class _028할일목록 {
+    public static String[] solution(String[] todo_list, boolean[] finished) {
+    	Stream<String> StrStream = Arrays.stream(todo_list);
+    }
+
+	public static void main(String[] args) {
+		String[] todo_list = {"problemsolving", "practiceguitar", "swim", "studygraph"};
+		boolean[] finished = {true, false, true, false};
+		System.out.println(solution(todo_list, finished));
+	}
+}

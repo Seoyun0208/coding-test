@@ -1,0 +1,13 @@
+package lv0;
+
+public class _028할일목록 {
+    public static String[] solution(String[] todo_list, boolean[] finished) {
+    	return todo_list.filter((String todo, i) -> !finished[i] ? todo : null);
+    }
+
+	public static void main(String[] args) {
+		String[] todo_list = {"problemsolving", "practiceguitar", "swim", "studygraph"};
+		boolean[] finished = {true, false, true, false};
+		System.out.println(solution(todo_list, finished));
+	}
+}

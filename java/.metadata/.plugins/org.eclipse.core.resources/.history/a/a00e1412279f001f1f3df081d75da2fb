@@ -1,0 +1,16 @@
+package lv0;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class _0295명씩 {
+    public static String[] solution(String[] names) {
+    	List<String> namesList = new ArrayList<String>();
+    	namesList.stream().filter((name, i) -> !(i % 5));
+    }
+
+	public static void main(String[] args) {
+		String[] names = {"nami", "ahri", "jayce", "garen", "ivern", "vex", "jinx"};
+		System.out.println(solution(names));
+	}
+}
