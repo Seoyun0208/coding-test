@@ -1,0 +1,18 @@
+package lv0;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class _031n개간격의원소들 {
+    public static int[] solution(int[] num_list, int n) {
+    	List<Integer> list = new ArrayList<Integer>();
+    	list.stream().filter((num, i) -> i % n == 0);
+    }
+
+	public static void main(String[] args) {
+		int[] num_list = {4, 2, 6, 1, 7, 6};
+		int n = 2;
+		System.out.println(solution(num_list, n));
+	}
+}
