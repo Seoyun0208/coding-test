@@ -1,0 +1,14 @@
+package lv0;
+
+import java.util.Arrays;
+
+public class _035첫번째로나오는음수 {
+    public static int solution(int[] num_list) {
+    	return Arrays.copyOfRange(num_list, n - 1, num_list.length);
+    }
+
+	public static void main(String[] args) {
+		int[] num_list = {12, 4, 15, 46, 38, -2, 15};
+		System.out.println(solution(num_list));
+	}
+}
