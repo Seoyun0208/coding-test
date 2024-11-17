@@ -1,0 +1,13 @@
+package lv0;
+
+public class _037접두사인지확인하기 {
+    public static String solution(String my_string, String is_prefix) {
+    	return my_string.slice(0, 3); 
+    }
+
+	public static void main(String[] args) {
+		String my_string = "banana";
+		String is_prefix = "ban";
+		System.out.println(solution(my_string, is_prefix));
+	}
+}
